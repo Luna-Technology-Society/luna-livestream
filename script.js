@@ -2,6 +2,7 @@
 const stages = ["Tanking", "QD Disconnect", "Go/No go"];
 const circleRadius = 164;
 const degreeRange = 130;
+const activeColor = "";
 
 // Render Stages ==========================
 const offset = (180-degreeRange)/2;
@@ -27,8 +28,7 @@ document.getElementById("buttons").innerHTML = htmlRender;
 // Button click function ==========================
 function setStage(stageIndex) {
     document.getElementById("line-rot").style = `transform: rotate(${offset+(degreeRange/(stages.length-1))*stageIndex}deg);`;
-    document.getElementsByName(stages[stageIndex]).style = `background-color: #C71313`;
-
+    
     for (let i = 0; i < stages.length; i++) {
         if (i <= stageIndex) {
             setTimeout(()=>{
