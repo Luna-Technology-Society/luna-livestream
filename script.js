@@ -1,7 +1,7 @@
 // Adjustment constants ==========================
 const stages = ["Tanking", "QD Disconnect", "Go/No go"];
-const circleRadius = 164;
-const degreeRange = 130;
+const circleRadius = 328/2;
+const degreeRange = 70;
 const activeColor = "";
 
 // Render Stages ==========================
